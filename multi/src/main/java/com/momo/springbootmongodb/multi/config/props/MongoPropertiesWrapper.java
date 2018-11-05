@@ -1,6 +1,5 @@
 package com.momo.springbootmongodb.multi.config.props;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.mongo.MongoProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
@@ -13,8 +12,6 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(prefix = "mongodb")
 public class MongoPropertiesWrapper {
     
-    private String primaryHost;
-
     private MongoProperties primary = new MongoProperties();
     private MongoProperties secondary = new MongoProperties();
 
@@ -34,11 +31,4 @@ public class MongoPropertiesWrapper {
         this.secondary = secondary;
     }
 
-    public String getPrimaryHost() {
-        return primaryHost;
-    }
-
-    public void setPrimaryHost(String primaryHost) {
-        this.primaryHost = primaryHost;
-    }
 }

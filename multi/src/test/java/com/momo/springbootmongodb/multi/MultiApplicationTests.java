@@ -37,7 +37,5 @@ public class MultiApplicationTests {
         for (SecondaryUser secondary : secondaries) {
             System.out.println(secondary.toString());
         }
-
     }
-
 }
