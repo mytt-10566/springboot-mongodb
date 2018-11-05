@@ -1,0 +1,10 @@
+
+mongodb: 
+  primary: 
+    host: localhost
+    port: 27017
+    database: test
+  secondary: 
+    host: localhost
+    port: 27017
+    database: test2
